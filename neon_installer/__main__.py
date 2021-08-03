@@ -6,7 +6,7 @@ from git import Repo
 from neon_installer import *
 from .astring import main
 import os
-from neonconfig import REPO_URL, REPO_BRANCH, DESTINATION
+#from neonconfig import REPO_URL, REPO_BRANCH, DESTINATION
 from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
 from telethon.tl.functions.channels import EditPhotoRequest, CreateChannelRequest
@@ -15,6 +15,7 @@ from .language import LANG, COUNTRY, LANGUAGE, TZ
 from rich.prompt import Prompt, Confirm
 import base64
 
+REPO_URL = "https://github.com/TheOksigen/NeonUserBot"
 LANG = LANG['MAIN']
 
 def connect (api):
@@ -99,9 +100,9 @@ if __name__ == "__main__":
     
     # cr: https://github.com/fariddadashzade
     
-    if os.path.isdir(DESTINATION):
-        rm_r(DESTINATION)
-    repo = Repo.clone_from(REPO_URL,DESTINATION, branch=REPO_BRANCH)
+    if os.path.isdir("./neonuserbot/"):
+        rm_r("./neonuserbot/")
+    repo = Repo.clone_from(REPO_URL,"./neonuserbot/", branch="master")
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
