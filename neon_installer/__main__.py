@@ -6,6 +6,7 @@ from git import Repo
 from neon_installer import *
 from .astring import main
 import os
+from neonconfig import REPO_URL, REPO_BRANCH, DESTINATION
 from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
 from telethon.tl.functions.channels import EditPhotoRequest, CreateChannelRequest
@@ -95,7 +96,22 @@ if __name__ == "__main__":
     appname = createApp(heroku)
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
-
+    
+    # cr: https://github.com/fariddadashzade
+    
+    if os.path.isdir(DESTINATION):
+        rm_r(DESTINATION)
+    repo = Repo.clone_from(REPO_URL,DESTINATION, branch=REPO_BRANCH)
+    basarili(LANG['DOWNLOADED'])
+    onemli(LANG['DEPLOYING'])
+    app = hgit(heroku, repo, appname)
+    config = app.config()
+    
+    basarili(LANG['DOWNLOADED'])
+    onemli(LANG['DEPLOYING'])
+    app = hgit(heroku, repo, appname)
+    config = app.config()
+    
     onemli(LANG['WRITING_CONFIG'])
 
     config['ANTI_SPAMBOT'] = 'False'
