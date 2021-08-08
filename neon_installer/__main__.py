@@ -183,4 +183,4 @@ if __name__ == "__main__":
             bilgi(f"\[1] {LANG['BOTLOG']}\n\[2] {LANG['NO_SUP']}\n\[3] {LANG['NO_LOG']}\n\[4] {LANG['CLOSE']}")
             
             Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3", "4"], default="4")
-        basarili("Tezliklə görüşərik!")
+        basarili("Tezliklə görüşərik! Can Cigerr")
