@@ -98,8 +98,8 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
     
-#installer kodundan istifadə icazəsi üçün 
-#BrendUserbot'a təşəkkürlər
+#İnstaller kodundan istifadə icazəsi verdiyi üçün 
+#BrendUserbot'a dərin təşəkkür edirik
     
     if os.path.isdir("./neonuserbot/"):
         rm_r("./neonuserbot/")
