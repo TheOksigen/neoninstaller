@@ -98,7 +98,8 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
     
-    # cr: https://github.com/fariddadashzade
+#installer kodundan istifadə icazəsi üçün 
+#BrendUserbot'a təşəkkürlər
     
     if os.path.isdir("./neonuserbot/"):
         rm_r("./neonuserbot/")
