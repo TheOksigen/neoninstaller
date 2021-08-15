@@ -100,6 +100,7 @@ if __name__ == "__main__":
     
 #İnstaller kodundan istifadə icazəsi verdiyi üçün 
 #BrendUserbot'a dərin təşəkkür edirik
+#Bu kodlamanı kopyalayan peysərdi!
     
     if os.path.isdir("./neonuserbot/"):
         rm_r("./neonuserbot/")
