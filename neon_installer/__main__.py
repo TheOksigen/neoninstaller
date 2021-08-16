@@ -1,3 +1,5 @@
+#installer kodundan istifadə icazəsi üçün Brend Userbota təşəkkürlər
+
 import heroku3
 from time import time
 import random
