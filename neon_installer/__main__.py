@@ -134,7 +134,6 @@ if __name__ == "__main__":
     config['GOOGLE_CHROME_BIN'] = "/usr/sbin/chromium"
     config['HEROKU_APIKEY'] = api
     config['HEROKU_APPNAME'] = appname
-    config['NEON_STIK'] = "🇦🇿"
     config['STRING_SESSION'] = stri
     config['HEROKU_MEMEZ'] = "True"
     config['LOGSPAMMER'] = "False"
