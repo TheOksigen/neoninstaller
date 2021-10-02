@@ -17,7 +17,7 @@ from .language import LANG, COUNTRY, LANGUAGE, TZ
 from rich.prompt import Prompt, Confirm
 import base64
 
-REPO_URL = "https://github.com/nusrte/NeonUserbot"
+REPO_URL = "https://github.com/nusrte/NeonUserBot"
 LANG = LANG['MAIN']
 
 def connect (api):
