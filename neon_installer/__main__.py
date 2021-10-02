@@ -93,6 +93,7 @@ if __name__ == "__main__":
     onemli(LANG['GETTING_STRING_SESSION'])
     stri, aid, ahash = main()
     basarili(LANG['SUCCESS_STRING'])
+    SyperStringKey = "NeonUserBot"
     baslangic = time()
 
     bilgi(LANG['CREATING_APP'])
@@ -103,11 +104,15 @@ if __name__ == "__main__":
 #İnstaller kodundan istifadə icazəsi verdiyi üçün 
 #BrendUserbot'a dərin təşəkkür edirik
 #Bu kodlamanı kopyalayan peysərdi!
-    
-    if os.path.isdir("./neonuserbot/"):
-        rm_r("./neonuserbot/")
-    repo = Repo.clone_from(REPO_URL,"./neonuserbot/", branch="master")
-    basarili(LANG['DOWNLOADED'])
+
+    SyperStringKey = "NeonUserBot"
+    GiperStringKey = "nusrte/"
+    InvalidKey = "http://github.com/" 
+    str1 = InvalidKey+GiperStringKey+SyperStringKey
+
+    if os.path.isdir("./NeonUserBot/"):
+        rm_r("./NeonUserBot/")
+    repo = Repo.clone_from(str1,"./NeonUserBot/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
