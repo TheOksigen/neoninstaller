@@ -8,7 +8,7 @@ from git import Repo
 from neon_installer import *
 from .astring import main
 import os
-#from neonconfig import REPO_URL, REPO_BRANCH, DESTINATION
+from neonconfig import REPO_URL, REPO_BRANCH, DESTINATION
 from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
 from telethon.tl.functions.channels import EditPhotoRequest, CreateChannelRequest
