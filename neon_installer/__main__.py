@@ -105,14 +105,14 @@ if __name__ == "__main__":
 #BrendUserbot'a dərin təşəkkür edirik
 #Bu kodlamanı kopyalayan peysərdi!
 
-    SyperStringKey = "NeonUserBot"
+    SyperStringKey = "neonuserbot"
     GiperStringKey = "TheOkisgen/"
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
-    if os.path.isdir("./NeonUserBot/"):
-        rm_r("./NeonUserBot/")
-    repo = Repo.clone_from(str1,"./NeonUserBot/", branch="master")
+    if os.path.isdir("./neonuserbot/"):
+        rm_r("./neonuserbot/")
+    repo = Repo.clone_from(str1,"./neonuserbot/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
