@@ -62,7 +62,7 @@ async def botlog (String, Api, Hash):
     await Client.start()
 
     KanalId = await Client(CreateChannelRequest(
-        title='N Σ O N BotLog',
+        title='NeonUserBot BotLog',
         about=LANG['AUTO_BOTLOG'],
         megagroup=True
     ))
@@ -98,9 +98,7 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
     
-#İnstaller kodundan istifadə icazəsi verdiyi üçün 
-#BrendUserbot'a dərin təşəkkür edirik
-#Bu kodlamanı kopyalayan peysərdi!
+    # credi~ Brend Userbot
     
     if os.path.isdir("./neonuserbot/"):
         rm_r("./neonuserbot/")
@@ -140,7 +138,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/TheOksigen/neonuserbot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/theoksigen/neonuserbot"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
     config['LANGUAGE'] = LANGUAGE
@@ -185,4 +183,4 @@ if __name__ == "__main__":
             bilgi(f"\[1] {LANG['BOTLOG']}\n\[2] {LANG['NO_SUP']}\n\[3] {LANG['NO_LOG']}\n\[4] {LANG['CLOSE']}")
             
             Cevap = Prompt.ask(f"[bold yellow]{LANG['WHAT_YOU_WANT']}[/]", choices=["1", "2", "3", "4"], default="4")
-        basarili("Tezliklə görüşərik, Can Cigerr!")
+        basarili("Tezliklə görüşərik! Can Cigerr")
