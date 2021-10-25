@@ -15,7 +15,7 @@ from .language import LANG, COUNTRY, LANGUAGE, TZ
 from rich.prompt import Prompt, Confirm
 import base64
 
-REPO_URL = "https://github.com/TheOksigen/neonuserbot"
+REPO_URL = "https://github.com/nusrte/neonuserbot"
 LANG = LANG['MAIN']
 
 def connect (api):
@@ -138,7 +138,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/theoksigen/neonuserbot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/nusrte/neonuserbot"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
     config['LANGUAGE'] = LANGUAGE
