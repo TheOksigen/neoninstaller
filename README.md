@@ -10,7 +10,7 @@ NeonUserBot's İnstaller.
 
 <h3>What is NeonUserBot?</h3>
 
->*[Touch here about for NeonUserBot.](https://github.com/nusrte/NeonUserBot-Old/blob/master/ReadMe.md)*
+>*[Touch here about for NeonUserBot.](https://github.com/nusrte/neonuserbot)*
 
 <h3>CREDİT.</h3>
 
