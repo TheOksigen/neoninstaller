@@ -1,5 +1,3 @@
-#installer kodundan istifadə icazəsi üçün Brend Userbota təşəkkürlər
-
 import heroku3
 from time import time
 import random
@@ -93,7 +91,6 @@ if __name__ == "__main__":
     onemli(LANG['GETTING_STRING_SESSION'])
     stri, aid, ahash = main()
     basarili(LANG['SUCCESS_STRING'])
-    SyperStringKey = "NeonUserBot"
     baslangic = time()
 
     bilgi(LANG['CREATING_APP'])
@@ -104,15 +101,11 @@ if __name__ == "__main__":
 #İnstaller kodundan istifadə icazəsi verdiyi üçün 
 #BrendUserbot'a dərin təşəkkür edirik
 #Bu kodlamanı kopyalayan peysərdi!
-
-    SyperStringKey = "neonuserbot"
-    GiperStringKey = "TheOkisgen/"
-    InvalidKey = "http://github.com/" 
-    str1 = InvalidKey+GiperStringKey+SyperStringKey
-
+    
     if os.path.isdir("./neonuserbot/"):
         rm_r("./neonuserbot/")
-    repo = Repo.clone_from(str1,"./neonuserbot/", branch="master")
+    repo = Repo.clone_from(REPO_URL,"./neonuserbot/", branch="master")
+    basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
